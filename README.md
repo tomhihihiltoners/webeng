@@ -2,6 +2,23 @@
 
 A modern, dark-themed interactive quiz built with Next.js, TypeScript, and Tailwind CSS. Quiz content is loaded from a separate JSON file, so the interface can be reused with any quiz using the same format.
 
+## Team Mode
+
+Before the quiz starts, the host can:
+
+- add and remove teams
+- rename teams
+- start the quiz when the lineup is ready
+
+During the quiz:
+
+- every question has a 60-second state-controlled timer
+- the timer stops when an answer is selected or time expires
+- a correct answer lets the host award `+1` point to a team
+- team scores remain visible at the bottom of the quiz screen
+- clicking a team score turns it into an editable input
+- scores can be positive, zero, or negative
+
 ## Run locally
 
 ```bash
