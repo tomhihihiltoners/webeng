@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(99, 102, 241, 0.24), transparent 34%),
+    radial-gradient(circle at 88% 10%, rgba(34, 211, 238, 0.16), transparent 32%),
+    radial-gradient(circle at 50% 100%, rgba(129, 140, 248, 0.14), transparent 44%),
+    #05070f;
+  color: #f1f5f9;
+}
+
+::selection {
+  background-color: rgba(99, 102, 241, 0.35);
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
